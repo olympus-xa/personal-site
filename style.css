@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
+/* navigation bar */
 .nav-container {
     color: rgb(3, 0, 0);
     background-color: #b6b495;
@@ -30,45 +31,23 @@ li a {
     color: black;
 }
 
-* {box-sizing:border-box}
-
 /* slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  height:480px;
+  width:640px;
   position: relative;
   margin: auto;
-  padding-top: 5em;
-  border: #000000;
-  border-width: 2em;
+  padding-top:24px;
 }
-
 /*hide the images by default */
 .mySlides {
   display: none;
 }
-
-/* next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+img {
+  height:720px;
+  width:1080px;
+  border: 12px double black;
 }
-
-/* position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
 /* on hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
@@ -90,7 +69,7 @@ li a {
 .numbertext {
   color: #000000;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 24px 12px 12px 24px;
   position: absolute;
 }
 
