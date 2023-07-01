@@ -1,0 +1,106 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.nav-container {
+    color: rgb(3, 0, 0);
+    background-color: #b6b495;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+}
+
+ul {
+    list-style: none;
+
+}
+li {
+    float: right;
+    margin: 10px;
+}
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+* {box-sizing:border-box}
+
+/* slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 5em;
+  border: #000000;
+  border-width: 2em;
+}
+
+/*hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* on hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* captions */
+.text {
+  color: #f5ebeb;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* numbers */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+}
+
+/* fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
