@@ -5,8 +5,9 @@
 }
 /* navigation bar */
 .nav-container {
-    color: rgb(3, 0, 0);
-    background-color: #b6b495;
+    color: #212121;
+    font-family: monaco, monospace;
+    background-color: #D9CAB3;
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -24,13 +25,12 @@ ul {
 }
 li {
     float: right;
-    margin: 10px;
+    margin: 10px 20px 10px 20px;
 }
-li a {
+a {
     text-decoration: none;
     color: black;
 }
-
 /* slideshow container */
 .slideshow-container {
   height:480px;
@@ -43,10 +43,10 @@ li a {
 .mySlides {
   display: none;
 }
-img {
-  height:720px;
-  width:1080px;
-  border: 12px double black;
+.myslides img {
+  height:480px;
+  width:640px;
+  border: 12px double #212121;
 }
 /* on hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -56,6 +56,7 @@ img {
 /* captions */
 .text {
   color: #f5ebeb;
+  font-family: monaco, monospace;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 15px;
   padding: 8px 12px;
@@ -82,4 +83,38 @@ img {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+.bottom-nav{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+body{
+  background-color: #F6F6F6;
+}
+.bio{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 12px;
+  padding: 24px;
+}
+.bio p{
+  font-family: monaco, monospace;
+  font-size: 24px;
+  color: #212121;
+  margin-top: 12px;
+}
+.about-page{
+  display:flex;
+  flex-direction: row;
+}
+.headshot img{
+  margin: 12px;
+  border: 12px double #212121;
+}
+.about-icons{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 150px;
 }
