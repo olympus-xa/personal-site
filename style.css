@@ -36,14 +36,15 @@ a {
   height:480px;
   width:640px;
   position: relative;
-  margin: auto;
-  padding-top:24px;
+  margin: 2em auto;
+  padding-top:2em;
+  
 }
 /*hide the images by default */
 .mySlides {
   display: none;
 }
-.myslides img {
+.mySlides img {
   height:480px;
   width:640px;
   border: 12px double #212121;
@@ -99,25 +100,84 @@ body{
 .bio{
   display: flex;
   flex-direction: row;
-  margin: 12px;
-  padding: 24px;
+  margin: .5em;
+  padding: 1em;
+  font-family: monaco, monospace;
+  font-size: 24px;
+  color: #212121;
+  line-height: 150%;
 }
 .bio-text{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 0px 240px 0px 240px;
-  font-family: monaco, monospace;
-  font-size: 24px;
-  color: #212121;
+  padding: 0px 10em 0px 10em;
+  
 }
 .headshot img{
   width:150;
   height:300;
-  margin: 12px;
-  border: 12px double #212121;
+  margin: .5em 10em .5em .5em;
+  border: 1em double #212121;
 }
 .bottom-nav-about{
   display:flex;
   justify-content: space-evenly;
+  padding: 2em 5em 0px 5em;
+}
+.poem-menu { 
+  font-family: monaco, monospace;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.poem-menu h2{
+  margin-bottom: 1em;
+}
+
+.poem-menu a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+
+.poem-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.poem-menu a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.content {
+  display: flex;
+  line-height: 2em;
+  margin: 5em 15em 5em 15em;
+  padding: 1px 16px;
+  height: 5em;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
