@@ -128,8 +128,8 @@ body{
 .poem-menu { 
   font-family: monaco, monospace;
   font-size: 24px;
-  margin: 0;
-  padding: 0;
+  margin-top: 3em;
+  margin-left: 3em;
   width: 200px;
   position: fixed;
   height: 100%;
@@ -148,7 +148,7 @@ body{
 
 
 .poem-menu a.active {
-  background-color: #04AA6D;
+  background-color: #D9CAB3;
   color: white;
 }
 
@@ -159,10 +159,32 @@ body{
 
 .content {
   display: flex;
+  flex-direction: column;
   line-height: 2em;
   margin: 5em 15em 5em 15em;
   padding: 1px 16px;
   height: 5em;
+}
+.content pre{
+  margin: 3em;
+}
+#pap{
+  padding-left:2em;
+}
+#atlas{
+  padding-left: 6em;
+}
+#december{
+  padding-left: 10em;
+}
+#shiver{
+  padding-left:14em;
+}
+#crow{
+  padding-left:18em;
+}
+#floating{
+  padding-left:22em
 }
 
 @media screen and (max-width: 700px) {
