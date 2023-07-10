@@ -31,6 +31,11 @@ a {
     text-decoration: none;
     color: black;
 }
+.body-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* slideshow container */
 .slideshow-container {
   height:480px;
@@ -85,14 +90,27 @@ a {
   from {opacity: .4}
   to {opacity: 1}
 }
+/* icon links and site info */
 .bottom-nav{
   display:flex;
-  justify-content: space-between;
-  margin-top: 36px;
+  justify-content: center;
+  margin-top: 5em;
+}
+.contact-button{
+  padding: 0 1em 0 1em;
+}
+.site-info{
+  font-family: monospace;
+  font-size:12px;
+  text-align: center;
+  margin-top:1em;
+  margin-bottom:1em;
 }
 body{
   background-color: #F6F6F6;
 }
+
+/* about page */
 .about-page{
   display:flex;
   flex-direction: column;
@@ -100,35 +118,43 @@ body{
 .bio{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   margin: .5em;
   padding: 1em;
-  font-family: monaco, monospace;
+  font-family: monospace;
   font-size: 24px;
   color: #212121;
   line-height: 150%;
 }
+/* bio */
 .bio-text{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 0px 10em 0px 10em;
-  
+  padding-right: 2em;
+}
+/* headshot */
+.headshot{
+  display: flex;
+  flex-direction: column;
+  font-size: 8px;
 }
 .headshot img{
-  width:150;
-  height:300;
-  margin: .5em 10em .5em .5em;
+  width:500px;
+  height:500px;
   border: 1em double #212121;
 }
+/* social icons */
 .bottom-nav-about{
   display:flex;
   justify-content: space-evenly;
   padding: 2em 5em 0px 5em;
 }
+/* poem navigation menu */
 .poem-menu { 
   font-family: monaco, monospace;
   font-size: 24px;
-  margin-top: 3em;
+  margin-top: 1em;
   margin-left: 3em;
   width: 200px;
   position: fixed;
@@ -138,30 +164,24 @@ body{
 .poem-menu h2{
   margin-bottom: 1em;
 }
-
 .poem-menu a {
   display: block;
   color: black;
   padding: 16px;
   text-decoration: none;
 }
-
-
-.poem-menu a.active {
+/* highlight back to top button*/
+.to-top {
   background-color: #D9CAB3;
   color: white;
 }
 
-.poem-menu a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
+/* poems */
 .content {
   display: flex;
   flex-direction: column;
   line-height: 2em;
-  margin: 5em 15em 5em 15em;
+  margin: 5em 16em 5em 16em;
   padding: 1px 16px;
   height: 5em;
 }
@@ -186,7 +206,7 @@ body{
 #floating{
   padding-left:22em
 }
-
+/* adjust content for smaller screen size */
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
