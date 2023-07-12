@@ -3,7 +3,11 @@
     padding:0;
     box-sizing: border-box;
 }
+body{
+  background-color: #F6F6F6;
+}
 /* navigation bar */
+
 .nav-container {
     color: #212121;
     font-family: monaco, monospace;
@@ -18,7 +22,6 @@
     justify-content: space-around;
     font-size: 28px;
 }
-
 ul {
     list-style: none;
 
@@ -31,12 +34,20 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* center, space slideshow and buttons */
+
 .body-container{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 20%;
 }
+
 /* slideshow container */
+
 .slideshow-container {
   height:480px;
   width:640px;
@@ -45,21 +56,17 @@ a {
   padding-top:2em;
   
 }
-/*hide the images by default */
-.mySlides {
-  display: none;
-}
+
+/* size slideshow image and add border */
+
 .mySlides img {
   height:480px;
   width:640px;
   border: 12px double #212121;
 }
-/* on hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
 
-/* captions */
+/* slideshow captions */
+
 .text {
   color: #f5ebeb;
   font-family: monaco, monospace;
@@ -72,7 +79,8 @@ a {
   text-align: center;
 }
 
-/* numbers */
+/* slideshow numbers */
+
 .numbertext {
   color: #000000;
   font-size: 12px;
@@ -80,7 +88,8 @@ a {
   position: absolute;
 }
 
-/* fading animation */
+/* fading animation when changing slides*/
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -90,50 +99,64 @@ a {
   from {opacity: .4}
   to {opacity: 1}
 }
+
 /* icon links and site info */
+
 .bottom-nav{
-  display:flex;
+  display:flex; 
   justify-content: center;
-  margin-top: 5em;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+ 
 }
 .contact-button{
   padding: 0 1em 0 1em;
 }
-.site-info{
+.site-info{ 
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:20px;
   font-family: monospace;
   font-size:12px;
   text-align: center;
   margin-top:1em;
   margin-bottom:1em;
 }
-body{
-  background-color: #F6F6F6;
-}
+
 
 /* about page */
+
 .about-page{
   display:flex;
   flex-direction: column;
 }
+
+/* bio text block*/
+
 .bio{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: .5em;
-  padding: 1em;
+  padding: 10em;
   font-family: monospace;
   font-size: 24px;
   color: #212121;
   line-height: 150%;
 }
-/* bio */
+
 .bio-text{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding-right: 2em;
 }
+
 /* headshot */
+
 .headshot{
   display: flex;
   flex-direction: column;
@@ -144,13 +167,16 @@ body{
   height:500px;
   border: 1em double #212121;
 }
+
 /* social icons */
+
 .bottom-nav-about{
-  display:flex;
-  justify-content: space-evenly;
-  padding: 2em 5em 0px 5em;
+  display:flex; 
+  justify-content: center;
 }
+
 /* poem navigation menu */
+
 .poem-menu { 
   font-family: monaco, monospace;
   font-size: 24px;
@@ -170,13 +196,16 @@ body{
   padding: 16px;
   text-decoration: none;
 }
+
 /* highlight back to top button*/
+
 .to-top {
   background-color: #D9CAB3;
   color: white;
 }
 
 /* poems */
+
 .content {
   display: flex;
   flex-direction: column;
@@ -206,7 +235,9 @@ body{
 #floating{
   padding-left:22em
 }
+
 /* adjust content for smaller screen size */
+
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
