@@ -109,10 +109,9 @@ a {
   bottom:0;
   width:100%;
   height:60px;
- 
 }
 .contact-button{
-  padding: 0 1em 0 1em;
+  padding-left: 1em;
 }
 .site-info{ 
   position:absolute;
