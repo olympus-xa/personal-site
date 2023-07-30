@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color: #F6F6F6;
+  background-color: #F5F5F5;
 }
 
 .header{
@@ -19,15 +19,32 @@ body{
 /* logo */
 .logo{
   font-size: 30px;
+  text-shadow: 10px 5px #E5E5CB;
+  
+}
+.logo a {
+  color:  #1A120B;;
+  text-decoration: none;
+}
+.logo a:hover{
+  text-shadow: -10px 10px #aaaa96, 10px -10px #E5E5CB, -10px -10px #dbdbb1, 10px 10px #929281;
 }
 
 /* navigation bar */
 .nav {
     font-size: 24px;
-    color: #212121;
     display: flex;
     justify-content: space-around;
-    border: 12px double #212121;
+    border: 6px solid #080807;
+    background-color: #F5F5F5;
+    box-shadow: 10px 5px 25px #1A120B;
+}
+.nav a{
+  text-decoration: none;
+  color: #212121;
+}
+.nav a:hover{
+  text-shadow: 10px 10px #E5E5CB, 5px -10px #E5E5CB, 5px 5px 5px #E5E5CB;
 }
 ul {
     list-style: none;
@@ -35,10 +52,6 @@ ul {
 li {
     float: right;
     padding: 12px;
-}
-a {
-    text-decoration: none;
-    color: black;
 }
 
 /* slideshow container */
@@ -55,6 +68,7 @@ a {
   height:480px;
   width:640px;
   border: 12px double #212121;
+  box-shadow: 5px 5px 25px #1A120B;
 }
 
 /* slideshow captions */
@@ -104,6 +118,8 @@ a {
   bottom:0;
   font-size:12px;
   text-align: center;
+  color: #050502;
+  text-shadow: 5px 1px #E5E5CB;
 }
 
 /* about page */
@@ -140,6 +156,7 @@ a {
 .poem-menu { 
   font-size: 18px;
   margin-top: 1em;
+  margin-left: 1em;
   width: 10em;
   position:fixed;
   height: 100%;
@@ -210,7 +227,7 @@ a {
   flex-direction: column;
   line-height: 2em;
   margin: 5em;
-  padding: 1px 16px;
+  padding-left: 3em;
   height: 5em;
 }
 .content pre{
