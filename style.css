@@ -138,32 +138,70 @@ a {
 /* poem navigation menu */
 
 .poem-menu { 
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 1em;
-  margin-right: 15em;
-  width: 200px;
+  width: 10em;
   position:fixed;
   height: 100%;
   overflow: auto;
 }
-.poem-menu h2{
-  margin-bottom: 1em;
-  margin-top: 1em;
-}
-.poem-menu a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}
-
-/* highlight back to top button*/
 
 .to-top {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
   background-color: #D9CAB3;
   color: white;
-  border: 16px #212121;
+  border:4px solid #000000;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 2em;
 }
+
+ /* dropdown Button */
+ .dropbtn {
+  background-color: #D9CAB3;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  border: 4px solid #000000;
+  cursor: pointer;
+  width: 10em;
+}
+
+/* hover and focus on dropdown botton*/
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #9e5f5f;
+}
+
+/* dropdown menu contrainer */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* links to poems */
+.dropdown-poems {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-poems a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* change color of titles on hover */
+.dropdown-poems a:hover {background-color: #ddd;}
+
+/* show the menu */
+.show {display:block;} 
+
 
 /* poems */
 
