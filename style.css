@@ -102,7 +102,13 @@ li {
   from {opacity: .4}
   to {opacity: 1}
 }
-
+.slide1-hidden {
+  display: none;
+}
+.logo:hover + .slide1-hidden{
+  display: block;
+  color: #D9CAB3;
+}
 /* icon links and site info */
 .bottom-nav{
   display:flex; 
@@ -131,10 +137,19 @@ li {
   font-size: 24px;
   line-height: 150%;
   margin-top: 2em;
+  left: 0;
+}
+.bio-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2em;
+  line-height: 1.75em;
 }
 
-.bio-text{
-  padding: 2em;
+.bio-text a{
+ text-decoration: solid;
+ color: #929281;
 }
 
 /* headshot */
@@ -173,6 +188,8 @@ li {
   text-align: center;
   margin-bottom: 1em;
   margin-top: 2em;
+  font-size: 14px;
+  width: 10em;
 }
 
  /* dropdown Button */
@@ -180,7 +197,7 @@ li {
   background-color: #D9CAB3;
   color: white;
   padding: 16px;
-  font-size: 18px;
+  font-size: 14px;
   border: 4px solid #000000;
   cursor: pointer;
   width: 10em;
@@ -205,6 +222,7 @@ li {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-size: 14px;
 }
 .dropdown-poems a {
   color: black;
@@ -232,24 +250,6 @@ li {
 }
 .content pre{
   margin: 3em;
-}
-#pap{
-  padding-left:2em;
-}
-#atlas{
-  padding-left: 6em;
-}
-#december{
-  padding-left: 10em;
-}
-#shiver{
-  padding-left:14em;
-}
-#crow{
-  padding-left:18em;
-}
-#floating{
-  padding-left:22em
 }
 
 /* adjust content for smaller screen size */
